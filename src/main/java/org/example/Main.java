@@ -44,6 +44,29 @@ public class Main {
 
         input.close();
 
+        /*
+            4.	Dados dos números, mostrar la suma, resta, división y multiplicación de ambos.
+        */
+        //declaracion de variables
+        double num1, num2, sum, res, div, mul;
 
+        //solicitud de datos al usuario
+        System.out.println("¡¡hola "+nombre+" ahora relizare por ti las operaciones matematicas basicas a dos numeros que tu ingreses!!");
+        System.out.println("Ingresa el primer numero: ");
+        num1 = input.nextDouble();
+        System.out.println("Ingresa el segundo numero: ");
+        num2 = input.nextDouble();
+
+        //operaciones matematicas
+        sum = num1+num2;
+        res = num1-num2;
+        mul = num1*num2;
+        div = num1/num2;
+
+        //mostrar resultados
+        System.out.println("SUMA \n"+num1+" + "+num2+" = "+sum+"\nRESTA\n"+num1+" - "+num2+" = "+res+
+                "\nMULTIPLICACION\n"+num1+" * "+num2+" = "+mul+"\nDIVISION\n"+num1+" / "+num2+" = "+div);
+
+        input.close();
     }
 }
