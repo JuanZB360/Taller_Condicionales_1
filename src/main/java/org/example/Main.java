@@ -44,6 +44,28 @@ public class Main {
 
         input.close();
 
+        /*
+            3.	Dados los catetos de un triángulo rectángulo, calcular su hipotenusa.
+        */
+        //Declaracion de variables
+        double catetoA, catetoB, hipo;
+
+        //Solicitud de informacion al usuario
+        System.out.println("Hola "+nombre+" ahora te ayudare a hallar la hipotenusa del triangulo rectangulo que tienes " +
+                "\n ahora ingresa la longitud del cateto A: ");
+        catetoA = input.nextDouble();
+        System.out.println("Ingresa la longitud del cateto B: ");
+        catetoB = input.nextDouble();
+
+        //Calculos matematicos teorema de pitagoras
+        hipo = Math.sqrt(Math.pow(catetoA,2) + Math.pow(catetoB,2));
+
+
+        //Resultado
+        System.out.println("Ya esta listo el resultado "+nombre+" la longitud de la hipotenusa del triangulo que tienes \nes de "+hipo);
+
+        input.close();
+
 
     }
 }
