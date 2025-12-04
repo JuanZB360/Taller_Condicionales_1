@@ -91,5 +91,27 @@ public class Main {
                 "\nMULTIPLICACION\n"+num1+" * "+num2+" = "+mul+"\nDIVISION\n"+num1+" / "+num2+" = "+div);
 
         input.close();
+
+        /*
+            5.	Escribir un programa que convierta un valor dado en grados Fahrenheit
+            a grados Celsius. Recordar que la fórmula para la conversión es:
+	        C = (F-32)*5/9
+        */
+
+        //Declaro las variables
+        float celcius, Fahrenheit;
+
+        //solicitar datos al usuario
+        System.out.println(nombre+" convertire los grados Fahrenheit a celcius: ");
+        System.out.println("Ingrsa los grados Fahrenheit:");
+        Fahrenheit = input.nextFloat();
+
+        //convierto a celcius
+        celcius = (Fahrenheit-32)*5/9;
+
+        //Respuesta del la conversion
+        System.out.println(nombre+" Increible los grados "+Fahrenheit+" Fahrenheit equivalen \na "+celcius+" Celcius, increible!");
+
+        input.close();
     }
 }
