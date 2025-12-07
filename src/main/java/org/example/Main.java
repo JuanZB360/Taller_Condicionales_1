@@ -113,5 +113,25 @@ public class Main {
         System.out.println(nombre+" Increible los grados "+Fahrenheit+" Fahrenheit equivalen \na "+celcius+" Celcius, increible!");
 
         input.close();
+
+        /*
+            6.	Calcular la media de tres números pedidos por teclado.
+         */
+        //Declaracion de las variables
+        double numero1, numero2, media;
+
+        //pedir los datos al usuario
+        System.out.println("Hola "+nombre+" ahora calculare la media \nde dos numeros que tu desees!");
+        System.out.println("Ingresa el primer numero: ");
+        numero1 = input.nextDouble();
+        System.out.println("Ingresa el segundo numero: ");
+        numero2 = input.nextDouble();
+
+        //calcular la media
+        media = (numero1 + numero2) / 2;
+
+        //entrega del resultado
+        System.out.println("Interesante "+nombre+" la media de los numeros \nque ingresaste es "+media+" super no!?");
+
     }
 }
