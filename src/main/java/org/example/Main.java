@@ -133,5 +133,31 @@ public class Main {
         //entrega del resultado
         System.out.println("Interesante "+nombre+" la media de los numeros \nque ingresaste es "+media+" super no!?");
 
+        /*
+            7.	Realiza un programa que reciba una cantidad
+            de minutos y muestre por pantalla a cuantas horas
+            y minutos corresponde. Por ejemplo: 1000 minutos
+            son 16 horas y 40 minutos.
+         */
+
+        //decalaracion de las variables
+        double minutos, horaConDecimal, minutosConDecimal;
+        int hora, minutosTotales;
+
+        //pedir datos al usuario
+        System.out.println(nombre+" ingresa la cantidad de minutos que quieres convertir a horas:");
+        minutos = input.nextDouble();
+
+        //Operaciones para convertir de minutos a horas
+
+        horaConDecimal = minutos / 60;
+        hora = (int) horaConDecimal;
+        minutosConDecimal = (horaConDecimal - hora) * 60;
+        minutosTotales = (int) minutosConDecimal;
+
+        //Entraga de Resultado
+        System.out.println("los "+minutos+" que ingresaste equivalen \na "+hora+" con "+minutosTotales+" minutos");
+
+
     }
 }
