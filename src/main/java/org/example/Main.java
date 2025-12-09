@@ -203,5 +203,27 @@ public class Main {
 
         input.close();
 
+
+        /*
+            9.	Una tienda ofrece un descuento del 15% sobre el total de la compra y
+            un cliente desea saber cuanto deberá pagar finalmente por su compra.
+         */
+
+        //declaracion de variables
+        double descuento, valorCompra;
+
+        //pedir datos al usuario
+        System.out.println("Hola "+nombre+" acabas de realizar una compra \ny te haran un descuento del 15% sobre el costo total \nyo te ayudare a calcular el valor de tu descuento.");
+        System.out.println("¿Cuanto es el valor de tu compra?");
+        valorCompra = input.nextDouble();
+
+        //realizar la operacion para calcular el descuento
+        descuento = valorCompra * 0.15;
+
+        //Entregar la respuesta al usuario
+        System.out.println("El descuento que recibiras por tu compra es de "+descuento);
+
+        input.close();
+
     }
 }
