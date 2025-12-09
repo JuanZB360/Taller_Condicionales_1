@@ -1,5 +1,6 @@
 package org.example;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
@@ -133,6 +134,8 @@ public class Main {
         //entrega del resultado
         System.out.println("Interesante "+nombre+" la media de los numeros \nque ingresaste es "+media+" super no!?");
 
+        input.close();
+
         /*
             7.	Realiza un programa que reciba una cantidad
             de minutos y muestre por pantalla a cuantas horas
@@ -158,6 +161,47 @@ public class Main {
         //Entraga de Resultado
         System.out.println("los "+minutos+" que ingresaste equivalen \na "+hora+" con "+minutosTotales+" minutos");
 
+        input.close();
+
+        /*
+            8.	Un vendedor recibe un sueldo base mas un 10% extra por comisión
+            de sus ventas, el vendedor desea saber cuanto dinero obtendrá por
+            concepto de comisiones por las tres ventas que realiza en el mes y
+            el total que recibirá en el mes tomando en cuenta su sueldo base y
+            comisiones.
+         */
+
+        double sueldoBase = 1600000;
+        ArrayList<Double> ventas = new ArrayList<>();
+        double venta, comicion = 0, total;
+
+        //pedir datos al usuarios
+        boolean confirmacion = true;
+        int i = 0;
+
+        while (confirmacion){
+            System.out.println("Ingresa el valor de la venta "+ (i+1) +" :");
+            venta = input.nextDouble();
+            ventas.add(venta);
+
+            System.out.println("Deseas agregar otra venta 'si' o 'no' : ");
+            String nuevoIngreso = input.nextLine();
+            if (nuevoIngreso.equals("no")){
+                confirmacion = false;
+            }
+        }
+
+        //operaciones para entregar resultados
+        for(Double ven:ventas){
+            comicion = comicion + ven;
+        }
+
+        System.out.println("tus ventas son de "+comicion);
+        comicion=comicion*0.10;
+        System.out.println("la comicion por tu ventas es de "+comicion);
+        System.out.println("y tu sueldo base es de "+sueldoBase);
+
+        input.close();
 
     }
 }
