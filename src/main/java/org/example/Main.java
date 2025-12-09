@@ -481,5 +481,22 @@ public class Main {
         System.out.println("El viaje duro "+dias+"y la Hora de llegada "+horaFinal+" : "+minutoFinal+" : "+segundoFinal);
 
         input.close();
+
+        /*
+            18.	Pedir el nombre y los dos apellidos de una persona y mostrar las iniciales.
+         */
+
+        //declarar variables
+        String nombreCompleto;
+
+        System.out.println("Ingresa tu nombre completo");
+        nombreCompleto = input.nextLine();
+
+        for (int j = 0; j < nombreCompleto.length(); j++) {
+            String letra = "" + nombreCompleto.charAt(j);
+            if (letra.equals(" ")) {
+                System.out.println(nombreCompleto.charAt(j+1));
+            }
+        }
     }
 }
