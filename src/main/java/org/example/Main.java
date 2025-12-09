@@ -322,5 +322,30 @@ public class Main {
         System.out.println("La distancia entre el punto x1: "+x1+" y1: "+y1+" y el punto x2: "+x2+" y2: "+y2+" es de "+distancia);
 
         input.close();
+
+        /*
+            System.out.println("Ingresar el primer punto");
+            System.out.println("Ubicacion del primer punto en el eje X: ");
+            x1 = input.nextDouble();
+            System.out.println("Ubicacion del primer punto en el eje Y: ");
+            y1 = input.nextDouble();
+         */
+
+        //declaracion de la variables
+        double num, raizCuadrada, raizCubica;
+
+        //pedir datos
+        System.out.println("cualcular raiz cuadrada y cubica de un numero.");
+        System.out.println("Ingresa el numero:");
+        num = input.nextDouble();
+
+        //calulos
+        raizCuadrada = Math.sqrt(num);
+        raizCubica = Math.cbrt(num);
+
+        //entrega del resultado
+        System.out.println("Del numero que ingresaste "+num+" la Raiz Cuadrada es "+raizCuadrada+" y Cubica "+raizCubica);
+
+        input.close();
     }
 }
