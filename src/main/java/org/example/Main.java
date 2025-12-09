@@ -324,11 +324,9 @@ public class Main {
         input.close();
 
         /*
-            System.out.println("Ingresar el primer punto");
-            System.out.println("Ubicacion del primer punto en el eje X: ");
-            x1 = input.nextDouble();
-            System.out.println("Ubicacion del primer punto en el eje Y: ");
-            y1 = input.nextDouble();
+            13.	Realizar un algoritmos que lea un número y que muestre su raíz cuadrada y su raíz cúbica.
+            PSeInt no tiene ninguna función predefinida que permita calcular la raíz cúbica, ¿Cómo se puede
+            calcular?
          */
 
         //declaracion de la variables
@@ -347,5 +345,35 @@ public class Main {
         System.out.println("Del numero que ingresaste "+num+" la Raiz Cuadrada es "+raizCuadrada+" y Cubica "+raizCubica);
 
         input.close();
+
+        /*
+            14.	Dado un número de dos cifras, diseñe un algoritmo que permita obtener el número invertido. Ejemplo,
+            si se introduce 23 que muestre 32.
+         */
+
+        //declaracion de variables
+        int numNormal, primernum, segundonum, numAlRevez;
+
+        //pedri datos
+        System.out.println("Ingresa un numero de dos cifras");
+
+        numNormal = input.nextInt();
+        boolean valido = true;
+        while (valido){
+            if (numNormal > 0 && numNormal < 100){
+                valido = false;
+            } else {
+                System.out.println("El numero es invalido debe tener dos cifras \nIngresa otro numero");
+                numNormal = input.nextInt();
+            }
+        }
+
+        segundonum = numNormal % 10;
+        primernum = numNormal / 10;
+
+        numAlRevez = (segundonum * 10) + segundonum;
+
+        input.close();
+
     }
 }
